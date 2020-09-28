@@ -18,7 +18,10 @@
 
   <div class="field">
     <%= form.label :alt_names %>
-    <%= form.text_field :alt_names %>
+    <% form.object.alt_names.each do |alt_name| %>
+      <%= form.text_field "alt_names", value: alt_name, multiple: true %>
+    <% end %>
+    <%= form.text_field "alt_names", value: "", multiple: true %>
   </div>
 
   <div class="actions">

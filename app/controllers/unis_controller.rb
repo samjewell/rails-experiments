@@ -69,6 +69,7 @@ class UnisController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def uni_params
-      params.require(:uni).permit(:name, :alt_names)
+      params["uni"]["alt_names"].delete("")
+      params.require(:uni).permit(:name, { alt_names: [] })
     end
 end
