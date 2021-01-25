@@ -1,15 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Vanilla Rails app, used to illustrate editing Postgres array fields through a Rails form object
 
-Things you may want to cover:
+## Ruby version
 
-* Ruby version
+2.7.0
 
-* System dependencies
+## System dependencies
 
-* Configuration
+None really
+
+## Configuration
+
+Preferably use Postgres, version 12.
+Either through Docker, or Postgres.app
+
+Run `bin/setup` to set up the repo
+
+Then `rails server` to run the server locally
 
 * Database creation
 
@@ -17,8 +25,3 @@ Things you may want to cover:
 
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
